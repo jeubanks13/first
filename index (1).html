@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jake Eubanks - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Jake Eubanks
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jbanks@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +15555551234
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://cdn.pixabay.com/photo/2025/01/22/09/48/ai-generated-9351640_640.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hello, I'm Jake Eubanks! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p> I am a student at Coursera learning new skills that I can apply to my future job in the field of Information Technology. I hope to one day break into the field of cybersecurity. I love to learn new things about a lot of things but I really like learning about the emerging AI!
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="https://alexn.org/assets/media/articles/java-logo.png"/>
+            <h6>Java</h6>
+            <p>4 years experience</p>
+          </div>  
+
+          <div class="skill">
+            <img src="https://delta-dev-software.fr/wp-content/uploads/2024/05/CSS-Logo.png"/>
+            <h6>CSS</h6>
+            <p>5 years experience</p>
+          </div>  
+
+          <div class="skill">
+            <img src="https://www.ciat.edu/wp-content/uploads/2022/09/python-logo-1.png"/>
+            <h6>Python</h6>
+            <p>6 years experience</p>
+          </div>  
+
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Retail Website</h3>
+            <ul>
+              <li>Developed a secure website integrated with chatbot for a retail client using HTML, CSS, JavaScript and IBM Watson Assistant. Company still uses this website and related code.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Quality Assurance for Retail Website</h3>
+            <ul>
+              <li>Performed Quality Assurance for a retail company on exsisting code. Suggested and preformed updates to comply with current standards.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Music App </h3>
+            <ul>
+              <li>Created a styled app for a music streaming company. USed mostly Java and Python to decelope the app.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Jake has a great attitude and is open to new things in IT. 
+          He is always willing to step up when in need. 
+          Jake is a great leader in my team and always willing to help. 
+          He has great soft skills and even better hard skills!
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Jake is a kind and caring team member who always puts the success of the team above all. 
+          He is always willing to go the extra step and make sure its all done well. 
+          I would love to have Jake back on my team any time!
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Jake and I have worked together since his start here and his progression has ben amazing.
+          He is a great leader and a source of knowledge.
+          Jake is an awesome addition to any team!
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onClick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thank You</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
